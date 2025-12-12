@@ -1,0 +1,29 @@
+{
+  "name": "verification-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot for member verification",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Meg",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agent-nau/Diskord-bot-101.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/agent-nau/Diskord-bot-101/issues"
+  },
+  "homepage": "https://github.com/agent-nau/Diskord-bot-101#readme"
+}
