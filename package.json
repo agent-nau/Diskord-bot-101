@@ -21,7 +21,7 @@
     "url": "git+https://github.com/agent-nau/Diskord-bot-101.git"
   },
   "keywords": [],
-  "type": "module",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/agent-nau/Diskord-bot-101/issues"
   },

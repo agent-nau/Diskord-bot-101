@@ -1,4 +1,4 @@
-import {
+const {
   Client,
   GatewayIntentBits,
   Partials,
@@ -7,13 +7,14 @@ import {
   ButtonStyle,
   Events,
   SlashCommandBuilder,
-  ChannelType,             
-  PermissionFlagsBits,     
-  EmbedBuilder,             
-  REST,                     
-  Routes                    
-} from "discord.js";
-import dotenv from "dotenv";
+  ChannelType,
+  PermissionFlagsBits,
+  EmbedBuilder,
+  REST,
+  Routes
+} = require("discord.js");
+
+const dotenv = require("dotenv");
 
 dotenv.config();
 
