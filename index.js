@@ -7,6 +7,11 @@ import {
   ButtonStyle,
   Events,
   SlashCommandBuilder,
+  ChannelType,             
+  PermissionFlagsBits,     
+  EmbedBuilder,             
+  REST,                     
+  Routes                    
 } from "discord.js";
 import dotenv from "dotenv";
 
@@ -94,7 +99,7 @@ const commands = [
 ];
 
 client.once("ready", async () => {
-  console.log(`Logged in as ${client.user.tag}`);
+  console.log(`✅ Logged in as ${client.user.tag}`);
 
   const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
   const body = commands.map(c => c.toJSON());
@@ -107,7 +112,7 @@ client.once("ready", async () => {
   }
 });
 
-client.on("interactionCreate", async i => {
+client.on(Events.InteractionCreate, async i => {
   try {
     if (!i.isChatInputCommand()) return;
 
