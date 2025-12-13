@@ -1,18 +1,13 @@
-import express from 'express';
+import express from "express";
 
 const app = express();
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-  res.send('Bot is alive! 🤖');
+// Simple health check route
+app.get("/", (req, res) => {
+  res.send("Bot is running!");
 });
 
-app.get('/ping', (req, res) => {
-  res.json({ status: 'ok', timestamp: Date.now() });
+app.listen(PORT, () => {
+  console.log(`🌐 Web service listening on port ${PORT}`);
 });
-
-export function startKeepAlive() {
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🌐 Keep-alive server running on port ${PORT}`);
-  });
-}
